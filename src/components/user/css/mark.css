@@ -1,0 +1,16 @@
+.marquee-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -100%;
+  }
+}

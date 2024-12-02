@@ -1,0 +1,143 @@
+.sticky-card-wrapper {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.sticky-card {
+  background-color: #f1f5f2;
+  border-radius: 40px;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 32px;
+  padding-right: 10px;
+  width: 90%;
+
+  @apply max-sm:flex-col;
+}
+.sticky-card-left {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 72px 104px 56px 72px;
+  display: flex;
+  @apply max-w-[550px] max-h-[550px];
+}
+.sticky-card-right {
+  width: 100%;
+  border-radius: 24px;
+  padding-bottom: 40%;
+  right: -12px;
+  position: relative;
+  overflow: hidden;
+
+  @apply max-sm:right-[-5px] max-sm:h-[100%];
+}
+.sticky-card.middle {
+  background-color: #d4fbdf;
+  margin-bottom: 32px;
+  top: 64px;
+}
+.sticky-card.bottom {
+  background-color: #a9f6c0;
+  margin-bottom: 0;
+  top: 96px;
+}
+.sticky-card-content {
+  @apply text-base max-sm:w-full;
+}
+.chip {
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  color: #48625c;
+  background-color: #f1f5f2;
+  border-radius: 8px;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration: none;
+  display: flex;
+}
+.image-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.ui-element {
+  z-index: 2;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #fff;
+  border-radius: 12px;
+  position: absolute;
+  box-shadow: 0 2px 12px rgba(10, 11, 13, 0.05);
+}
+.ui-element.plan-1 {
+  width: 226px;
+  top: 24px;
+  bottom: auto;
+  left: 38px;
+  right: auto;
+}
+.ui-element.plan-2 {
+  width: 254px;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background-color: #fff;
+  top: 75px;
+  bottom: auto;
+  left: 24px;
+  right: auto;
+}
+
+.ui-element.track {
+  width: 302px;
+  top: 24px;
+  bottom: auto;
+  left: auto;
+  right: 24px;
+}
+
+.ui-element.discover-1 {
+  width: 248px;
+  top: auto;
+  bottom: 70px;
+  left: 24px;
+  right: auto;
+}
+
+.ui-element.discover-2 {
+  width: 248px;
+  background-color: rgba(75, 237, 123, 0.9);
+  border-color: #4bed7b;
+  border-radius: 8px;
+  top: auto;
+  bottom: 24px;
+  left: 24px;
+  right: auto;
+}
+
+.heading.l {
+  letter-spacing: -1px;
+  font-size: 40px;
+  line-height: 1.2;
+
+  @apply max-sm:w-full;
+}
+
+.chip.floating {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}

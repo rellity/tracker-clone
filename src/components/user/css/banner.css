@@ -1,0 +1,9 @@
+.logomark {
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+  transform: translate(0, -50%);
+}
